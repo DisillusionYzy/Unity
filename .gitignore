@@ -1,7 +1,6 @@
-/*/
-/*
-!/Assets/
-!/Packages/
-!/ProjectSettings/
-!/*.sln
-!.gitignore
+/*/*/
+/*/*
+!/*/Assets/
+!/*/Packages/
+!/*/ProjectSettings/
+!/*/*.sln
