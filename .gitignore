@@ -3,4 +3,6 @@
 !/*/Assets/
 !/*/Packages/
 !/*/ProjectSettings/
+!/*/UserSettings/
 !/*/*.sln
+*.unitypackage
