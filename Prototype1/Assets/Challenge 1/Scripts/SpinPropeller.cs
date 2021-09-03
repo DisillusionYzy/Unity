@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+public class SpinPropeller : MonoBehaviour
 {
-    public GameObject player;
-    public Vector3 offset = new Vector3(0, 13f, -9.5f);
+    public float speed = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -14,8 +13,8 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        transform.position = player.transform.position + offset;
+        transform.Rotate(Vector3.back * speed * Time.deltaTime);
     }
 }
