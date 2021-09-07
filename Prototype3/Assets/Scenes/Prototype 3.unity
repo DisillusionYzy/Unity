@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -248,8 +248,8 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 5796312251530714538, guid: c21b909385471ea43b3c2dbf7584eea7, type: 3}
   spawnPos: {x: 25, y: 0, z: 0}
-  spawnIntervalMin: 2
-  spawnIntervalMax: 5
+  spawnIntervalMin: 1
+  spawnIntervalMax: 3
 --- !u!4 &277861938
 Transform:
   m_ObjectHideFlags: 0
@@ -872,7 +872,7 @@ MonoBehaviour:
   dirtParticle: {fileID: 722009583}
   jumpSound: {fileID: 8300000, guid: 0f7d0b7c3397f4dac91f20e8a77d2d57, type: 3}
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
-  jumpForce: 700
+  jumpForce: 600
   gravityModifier: 1.5
   isOnGround: 1
   gameOver: 0
