@@ -38,4 +38,21 @@ public class PlayerController : MonoBehaviour
         playerRb.AddForce(Vector3.right * speed * horizontalInput);
         playerRb.AddForce(Vector3.forward * speed * verticalInput);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Collide with enemy");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Powerup")
+        {
+            Debug.Log("Got a powerup");
+            Destroy(other.gameObject);
+        }
+    }
 }
