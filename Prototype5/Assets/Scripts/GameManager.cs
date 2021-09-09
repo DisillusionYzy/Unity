@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI gameoverText;
     public TextMeshProUGUI hpText;
     public Button restartButton;
+    public GameObject titleScreen;
 
     private int score = 0;
     private int hp = 3;
@@ -32,7 +33,6 @@ public class GameManager : MonoBehaviour
     {
         UpdateScore(0);
         SubHp(0);
-        StartCoroutine(SpawnTarget());
 
         gameoverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
@@ -91,5 +91,14 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
         hpText.text = "Hp: " + hp;
+    }
+
+    public void StartGame(int difficulty)
+    {
+        spawnRate /= difficulty;
+
+        StartCoroutine(SpawnTarget());
+
+        titleScreen.SetActive(false);
     }
 }
