@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2124751205682969958}
   m_Layer: 0
   m_Name: Good_04
-  m_TagString: Untagged
+  m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9afa4dc8fe1b63468a228c02126c8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point: 20
+  subHp: 1
+  explosionParticle: {fileID: 3199346384015752365, guid: 307229a5540374aae98859caad2128a3, type: 3}
+  soundClip: {fileID: 8300000, guid: a7539c939f30ec648a96d3b189691a48, type: 3}
 --- !u!54 &6847551387416416693
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -120,7 +124,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6658107744056864161}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4597009, y: 0.13234863, z: 0.55363166}
