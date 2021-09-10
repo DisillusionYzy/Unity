@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     public float zEnemySpawn = 13.0f;
     public float xSpawnRange = 8.0f;
     public float zPowerupSpawn = 3.0f;
-    public float ySpawn = 0.75f;
+    public float ySpawn = 0.5f;
     public float startDelay = 1.0f;
     public float enemySpawnItv = 1.0f;
     public float powerupSpawnItv = 4.0f;

@@ -7,6 +7,16 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float zBound = 4.5f;
     private Rigidbody playerRb;
+    private Animator playerAnim;
+
+    enum PlayerState
+    {
+        kStatic = 0,
+        kWalk = 1,
+        kRun = 2
+    };
+    private PlayerState playerState = PlayerState.kStatic;
+
     // public float horizontalInput;
     // public float verticalInput;
 
@@ -14,6 +24,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        playerAnim = gameObject.GetComponentInChildren<Animator>();
+        if (playerAnim)
+        {
+            playerAnim.SetFloat("Speed_f", 0.6f);
+            playerAnim.SetBool("Static_b", true);
+        }
     }
 
     // Update is called once per frame
@@ -25,7 +41,8 @@ public class PlayerController : MonoBehaviour
             var pos = transform.position;
             pos.z = -zBound;
             transform.position = pos;
-        } else if (transform.position.z > zBound)
+        }
+        else if (transform.position.z > zBound)
         {
             var pos = transform.position;
             pos.z = zBound;
