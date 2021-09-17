@@ -8,6 +8,7 @@ public class ParticleSystemPlayer : MonoBehaviour
 
     void PlayParticles()
     {
+        Debug.Log("PlayParticles");
         particles.Play();
     }
 }
