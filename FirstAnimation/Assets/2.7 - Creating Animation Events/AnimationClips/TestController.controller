@@ -6,19 +6,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StateSpeedController
+  m_Name: TestController
   serializedVersion: 5
-  m_AnimatorParameters:
-  - m_Name: SpeedMultiplier
-    m_Type: 1
-    m_DefaultFloat: 1
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+  m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 45441941524614293}
+    m_StateMachine: {fileID: 934596127058508955}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -28,7 +22,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &45441941524614293
+--- !u!1107 &934596127058508955
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -38,8 +32,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 4052505924103216835}
-    m_Position: {x: 290, y: 50, z: 0}
+    m_State: {fileID: 6231280739471965919}
+    m_Position: {x: 390, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -49,15 +43,15 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 4052505924103216835}
---- !u!1102 &4052505924103216835
+  m_DefaultState: {fileID: 6231280739471965919}
+--- !u!1102 &6231280739471965919
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Run
+  m_Name: Test
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -66,14 +60,13 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 1
+  m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1827226128182048838, guid: fdeb6e7e96d6e2e4585e0659af1ef684,
-    type: 3}
+  m_Motion: {fileID: 7400000, guid: 12ad69f0eaa0c804b95a8acf51bd8894, type: 2}
   m_Tag: 
-  m_SpeedParameter: SpeedMultiplier
+  m_SpeedParameter: 
   m_MirrorParameter: 
-  m_CycleOffsetParameter: SpeedMultiplier
-  m_TimeParameter: SpeedMultiplier
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
