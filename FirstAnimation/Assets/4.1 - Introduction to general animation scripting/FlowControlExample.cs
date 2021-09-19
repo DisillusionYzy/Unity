@@ -14,10 +14,10 @@ public class FlowControlExample : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
             animator.PlayInFixedTime(shootStateHash, 1, 0f);
-        
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
             animator.CrossFade(walkStateHash, 1f, 0, 0.1f, 0f);
     }
 }
