@@ -5,4 +5,5 @@
 !/*/ProjectSettings/
 !/*/UserSettings/
 !/*/*.sln
+!Odin-2.0.15.unitypackage
 *.unitypackage
