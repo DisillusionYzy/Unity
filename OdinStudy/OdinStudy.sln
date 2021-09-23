@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.CompatibilityLayer", "Sirenix.OdinInspector.CompatibilityLayer.csproj", "{90c41e2b-183e-d86a-b5fe-487bec4c2591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.CompatibilityLayer.Editor", "Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj", "{7d7f2b3c-4a76-11c0-0f54-cd05918c6189}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{90c41e2b-183e-d86a-b5fe-487bec4c2591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90c41e2b-183e-d86a-b5fe-487bec4c2591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7d7f2b3c-4a76-11c0-0f54-cd05918c6189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7d7f2b3c-4a76-11c0-0f54-cd05918c6189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
